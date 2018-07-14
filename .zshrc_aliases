@@ -1,0 +1,8 @@
+# Shortcuts
+alias k="kubectl"
+alias a="aws"
+
+# Secret aliases
+if [ -f $HOME/.zshrc_aliases_secret ]; then
+	source $HOME/.zshrc_aliases_secret
+fi
