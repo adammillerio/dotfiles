@@ -1,0 +1,10 @@
+# Pyenv
+if [ -x "$(command -v pyenv)" ]; then
+  eval "$(pyenv init -)"
+  eval "$(pyenv virtualenv-init -)"
+fi
+
+# Secret environment variables
+if [ -f $HOME/.zshrc_custom_secret ]; then
+	source $HOME/.zshrc_custom_secret
+fi
